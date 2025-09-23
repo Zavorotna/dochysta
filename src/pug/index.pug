@@ -18,12 +18,12 @@ html(lang="uk")
                     .flex.column.main_text
                         h1 Професійна виїзна хімчистка меблів. Пральня килимів у Луцьку та передмісті
                         p Ми використовуємо сучасне обладнання та безпечні засоби, які роблять клінінг максимально ефективним.
-                        a(href="#").cta.fill_cta замовити послугу 
+                        a(href="#contacts").cta.fill_cta замовити послугу 
                 .main_img_block
                     picture 
                         source(srcset="img/main.webp" type="image/webp")
                         img(src="img/main.jpg", alt="")
-            section.service_container.wrapper_lg.pb_80
+            section.service_container.wrapper_lg.pb_80#services
                 h2.tac Послуги
                 .grid.col_3.gap_20
                     figure.service_card
@@ -34,7 +34,7 @@ html(lang="uk")
                             h3 Виїзна хімчистка м'яких меблів
                             p Повертаємо мʼяким меблям, матрацам, стільцям, салонам авто, дитячим візочкам та автокріслам  свіжий вигляд без плям і запахів.
                             .flex-between.gap_20.wrap_768
-                                a(href="#").cta.fill_cta замовити послугу
+                                a(href="#contacts").cta.fill_cta замовити послугу
                                 a(href="#").cta.transparent_cta дізнатися більше
                     figure.service_card
                         figcaption
@@ -44,7 +44,7 @@ html(lang="uk")
                             h3 Хімчистка килимів
                             p Глибоко очищаємо килими від пилу, бруду та стійких забруднень у спеціалізованому цеху. Килим повертає свіжість з першого разу.
                             .flex-between.gap_20.wrap_768
-                                a(href="#").cta.fill_cta замовити послугу
+                                a(href="#contacts").cta.fill_cta замовити послугу
                                 a(href="#").cta.transparent_cta дізнатися більше
                     figure.service_card
                         figcaption
@@ -54,7 +54,7 @@ html(lang="uk")
                             h3 Професійне миття вікон
                             p Прозорі та сяючі вікна без розводів і подряпин. Ми працюємо швидко, безпечно та навіть з важкодоступними поверхнями.
                             .flex-between.gap_20.wrap_768
-                                a(href="#").cta.fill_cta замовити послугу
+                                a(href="#contacts").cta.fill_cta замовити послугу
                                 a(href="#").cta.transparent_cta дізнатися більше
             section.about_container#about.wrapper.pb_80
                 h2.tac Про нас
@@ -174,7 +174,7 @@ html(lang="uk")
                     picture 
                         source(srcset="img/about_2.webp" type="img/webp")
                         img(src="img/about_2.jpg", alt="")
-            section.works_container.wrapper_lg.pb_80
+            section.works_container.wrapper_lg.pb_80#works
                 h2.tac Наші роботи
                 .grid.col_3.gap_20
                     .work.work_1 
@@ -184,11 +184,11 @@ html(lang="uk")
                     .work.work_3 
                         span.pos_center до/після
                 .button_container.tac 
-                    a(href="`#").cta.fill_cta замовити послугу 
-            section.question_conteiner.wrapper.pb_80 
+                    a(href="#contacts").cta.fill_cta замовити послугу 
+            section.question_conteiner.wrapper.pb_80#info
                 h2.tac Питання та відповіді
                 include components/information
-            section.reviews_conainer.pb_80.wrapper_lg 
+            section.reviews_conainer.pb_80.wrapper_lg#reviews
                 h2.tac Відгуки
                 .grid.col_3.gap_20 
                     .review
