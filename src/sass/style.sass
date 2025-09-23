@@ -142,6 +142,9 @@ textarea
 
 @import components/header
 
+.d-block
+    display: block
+
 .main_text
     padding: 160rem 0
     p
@@ -194,10 +197,12 @@ textarea
     &:hover
         background: #fece00
 .service_card
-    padding: 30rem
+    padding: 20rem
     border-radius: 15px
     border: 2px solid #FECE00
     background: #FAFAFA
+    +media(1920)
+        padding: 30rem
     img
         width: 100%
         object-fit: cover
@@ -327,6 +332,7 @@ div.adv_block
 .contacts
     max-width: 1100rem
     margin: 0 auto
+    padding: 0 15rem 80rem
 .contacts_block
     h3 
         padding-bottom: 20rem

@@ -22,6 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 // console.log(item);
                 item.addEventListener("click", cancelBurger)
             }
+            if(window.innerWidth < 1200) {
+                item.addEventListener("click", function() {
+                    item.classList.toggle("hover_a")
+                })
+            }
         })
         cancel.addEventListener("click", function (e) {
             e.preventDefault()
@@ -53,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
         menuItem.addEventListener("click", function(e) {
             e.preventDefault()
-            submenu.style.display = "block"
+            submenu.classList.toggle("d-block")
         })
     }
 })

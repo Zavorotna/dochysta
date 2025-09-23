@@ -42,15 +42,20 @@
             &:hover
                 > .submenu
                     display: block
+            &:hover
+                > a
+                    color: #FECE00
+                    > svg
+                        transform: rotate(-180deg)
+                        path 
+                            stroke: #FECE00
         &:hover
-            > a
+            > .hover_a
                 color: #FECE00
                 > svg
                     transform: rotate(-180deg)
                     path 
                         stroke: #FECE00
-           
-
         +media(1200)
             padding: 40px 0
     a
@@ -60,7 +65,8 @@
         font-weight: 500
         +media(1200) 
             font-size: 18rem
-.toggle
+
+a.toggle
     display: flex
 
 .submenu
