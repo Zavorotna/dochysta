@@ -12,10 +12,10 @@
         $email = "ERROR IN MESSAGE";
         $comment = "ERROR IN MESSAGE";
     }
-    // $token = "8274790273:AAFH8bcAC9edye_q7RDX9szEyCPfH6vK_kM"; // api телеграм бота
-    // $chat_id = "-1002992930881";
-    $token = "6502486274:AAFqSGBvtvutHB8be-wTlsK3ETbssmLSEWo"; // api телеграм бота
-    $chat_id = "1066741091";
+    $token = "7552130536:AAFzqqczWXgbM_XwD45tgnBNhMSYfdM2kOQ"; // api телеграм бота
+    $chat_id = "-1002563931620";
+    // $token = "6502486274:AAFqSGBvtvutHB8be-wTlsK3ETbssmLSEWo"; // api телеграм бота
+    // $chat_id = "1066741091";
 
     $userPhone = urlencode("$userPhone");
     $userName = urlencode("$userName");
@@ -25,7 +25,7 @@
     
 
     $urlQuery = "https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=" .
-        "***<b>Заявка</b>***%0A" . "%0A%0A" .
+        "***<b>Заявка</b>***%0A" . "%0A" .
         "Ім'я: <b>$userName</b>%0A" .
         "Прізвище: <b>$userSurName</b>%0A" .
         "Телефон: <b>$userPhone</b>%0A" .

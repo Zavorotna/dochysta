@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         listItem.forEach(item => {
             if(!item.classList.contains("toggle")) {
-                console.log(item);
+                // console.log(item);
                 item.addEventListener("click", cancelBurger)
             }
         })
