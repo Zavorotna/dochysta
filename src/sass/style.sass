@@ -1,0 +1,388 @@
+@import components/mixins
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 0.7px
+    scroll-behavior: smooth
+    +media(1250)
+        font-size: 0.85px
+    +media(1920)
+        font-size: 1px
+    +media(2200)
+        font-size: 1.2px
+
+body
+    color: #121212
+    font-size: 20rem
+    font-family: Montserrat
+    font-weight: 400
+main
+    img
+        width: 100%
+        object-fit: cover
+section
+    margin-bottom: 80rem
+h1, h2
+    font-family: Ubuntu
+    font-size: 42rem
+    font-weight: 500
+h2
+    padding-bottom: 40rem
+h3
+    font-family: Ubuntu
+    font-size: 26rem
+    font-weight: 500
+ul
+    list-style: none
+
+a
+    transition: .5s
+    text-decoration: none
+label
+    display: inline-block
+    padding-bottom: 10rem 
+    
+input, textarea
+    width: 100%
+    padding: 20rem 10rem
+    border-radius: 5px
+    border: 1px solid #CFCECE
+    background: #FFF
+    outline: none
+    &::placeholder
+        color: #CFCECE
+        font-family: Montserrat
+        font-size: 16rem
+textarea
+    min-height: 130rem
+    max-height: 200rem
+    resize: none
+
+.wrapper_lg
+    width: 95%
+    margin: 0 auto
+
+.wrapper
+    width: 95%
+    margin: 0 auto
+    +media(768)
+        width: 75%
+    +media(1440)
+        max-width: 1428rem
+
+.flex
+    display: flex
+
+.flex-between
+    display: flex
+    justify-content: space-between
+
+.flex-center
+    justify-content: center
+
+.items-center
+    align-items: center
+
+.column
+    flex-direction: column
+
+.wrap_768
+    flex-wrap: wrap
+    +media(768)
+        flex-wrap: nowrap
+
+.wrap_1024
+    flex-wrap: wrap
+    +media(1024)
+        flex-wrap: nowrap
+
+.reverse_wrap
+    flex-wrap: wrap-reverse
+
+.grid
+    display: grid
+
+.col_2
+    +media(768)
+        grid-template-columns: repeat(2, 1fr)
+    
+.col_3
+    +media(768)
+        grid-template-columns: repeat(2, 1fr)
+    +media(1200)
+        grid-template-columns: repeat(3, 1fr)
+.tac
+    text-align: center
+
+.gap_10
+    gap: 10rem
+.gap_20
+    gap: 20rem
+.gap_50
+    gap: 50rem
+.pb_80
+    padding-bottom: 80rem
+.dark
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.5)
+    backdrop-filter: blur(4px)
+    z-index: 2
+
+.gray_bg
+    background-color: #FAFAFA
+
+@import components/header
+
+.main_text
+    padding: 160rem 0
+    p
+        padding: 70rem 0
+        font-size: 24rem
+    +media(768)
+        width: 50%
+
+.main_img_block
+    img
+        width: 100%
+        object-fit: cover
+    +media(768)
+        display: none
+
+.main_section
+    position: relative
+    z-index: 0
+    .cta
+        max-width: 262rem
+    +media(768)
+        &:before
+            content: ""
+            position: absolute
+            top: 0
+            right: 0
+            width: 50%
+            height: 100%
+            background: url(../img/main.jpg) no-repeat center/cover
+
+.cta
+    display: block
+    width: 100%
+    white-space: nowrap
+    padding: 19rem
+    color: #121212
+    font-weight: 500
+    text-align: center
+    border-radius: 15px
+    // +media(768)
+
+.fill_cta
+    background-color: #FECE00
+    &:hover
+        background-color: #FEA900
+
+.transparent_cta
+    background-color: #fff
+    border: 2px solid #fece00
+    &:hover
+        background: #fece00
+.service_card
+    padding: 30rem
+    border-radius: 15px
+    border: 2px solid #FECE00
+    background: #FAFAFA
+    img
+        width: 100%
+        object-fit: cover
+    h3
+        min-height: 42px
+        +media(1024)
+            min-height: auto
+    p
+        padding: 20rem 0
+        min-height: 120px
+
+.about_container
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    > div
+        +media(1024)
+            grid-template-columns: 50% 55%
+        &:nth-child(2)
+            padding-bottom: 45rem
+            h3
+                padding-bottom: 50rem
+            .about_text
+                > p
+                    padding-bottom: 20rem
+            img
+                border-radius: 15px 0 0 15px
+        &:nth-child(3)
+            img
+                border-radius: 0 15px 15px 0
+
+div.adv_block
+    justify-content: center
+    border-radius: 15px
+    border: 1px solid #CFCECE
+    background:  #FAFAFA
+    +media(500)
+        grid-template-columns: repeat(3, 1fr)
+    div
+        padding: 18rem 38rem
+        p
+            font-weight: 500
+            padding-bottom: 0
+            +media(600)
+                white-space: nowrap
+        &:nth-child(2)
+            position: relative
+            +media(500)
+                &::before,
+                &::after
+                    content: ""
+                    position: absolute
+                    top: 50%
+                    transform: translateY(-50%)
+                    width: 2px
+                    height: 60rem
+                    background-color: #CFCECE
+                &::before
+                    left: 0
+                &::after
+                    right: 0
+.yellow_text
+    color: #FECE00
+    padding: 0
+    font-family: Ubuntu
+    font-weight: 500
+    font-size: 64rem
+
+.adv_item
+    padding-bottom: 35rem
+    grid-template-columns: 80px 1fr
+    h3
+        padding-bottom: 15rem
+
+.icon_adv
+    position: relative
+    width: 80px
+    height: 80px
+    flex-shrink: 0
+    aspect-ratio: 1/1
+    border-radius: 10px
+    border: 1px solid #CFCECE
+    background: #FAFAFA
+
+.pos_center
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+@import components/info
+
+.works_container
+    > div
+        grid-template-rows: repeat(3, 362rem)
+        +media(768)
+            grid-template-rows: 362rem
+.work
+    position: relative
+    border-radius: 15px
+    margin-bottom: 40rem
+    span
+        display: inline-block
+        padding: 12rem 27rem
+        border-radius: 10px
+        border: 1px solid  #FECE00
+        background: #FFF
+.work_1
+    background: #000 url(../img/works.jpg) no-repeat center/cover
+.work_2
+    background: #000 url(../img/works_1.jpg) no-repeat center/cover
+.work_3
+    background: #000 url(../img/works_2.jpg) no-repeat center/cover
+
+.button_container
+    max-width: 262rem
+    margin: 0 auto
+
+.review
+    padding: 26rem 30rem
+    border-radius: 15px
+    border: 2px solid #FECE00
+    background: #FAFAFA
+    h3
+        padding-bottom: 10rem
+.contacts
+    max-width: 1100rem
+    margin: 0 auto
+.contacts_block
+    h3 
+        padding-bottom: 20rem
+    a
+        display: inline-block
+        color: #121212
+        padding-bottom: 15rem
+
+.contacts_block
+    padding-top: 30rem
+    +media(768)
+        grid-template-columns: 40% 60%
+    
+.form_container
+    padding: 40rem 30rem
+    border-radius: 15px
+    border: 1px solid #CFCECE
+    background: #FAFAFA
+    font-style: 18rem
+    form
+        > div
+            padding-bottom: 20rem
+    button
+        border: none
+        background:#FECE00
+        cursor: pointer
+        &:hover
+            background: #FEA900
+
+.errorName,
+.errorSurName,
+.error,
+.error_tel
+    display: none
+    color: #D61616
+    font-size: 12px
+    font-style: italic
+    
+
+.footer
+    padding: 40rem 0
+    font-size: 16px
+    background: #FAFAFA
+    box-shadow: 0 -3px 10px 0 rgba(0, 0, 0, 0.10)
+    div
+        > nav, ul, p
+            width: 100%
+            +media(768)
+                width: auto
+    nav
+        ul
+            +media(768)
+                display: flex
+        li
+            padding-bottom: 10rem
+    a
+        color: #121212
+        &:hover
+            color: #FECE00   
