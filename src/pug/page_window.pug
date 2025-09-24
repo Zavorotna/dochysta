@@ -1,0 +1,76 @@
+doctype html
+html(lang="uk")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=2.0, initial-scale=1.0")
+        title Професійна виїзна хімчистка меблів. Пральня килимів у Луцьку та передмісті
+        link(rel="stylesheet", href="css/styles.css")
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    body 
+        .dark
+        include components/header
+        main 
+            section.main_second_page.flex.column.flex-center.items-center.section_window.tac
+                .main_mask
+                .wrapper.main_text_page
+                    h1 Професійне миття вікон
+                    p Ми професійна команда, що спеціалізується на митті вікон будь-якої складності. Використовуємо безпечні засоби й сучасне обладнання. У нашій команді працюють майстри з досвідом понад 5 років, які гарантують бездоганний результат без розводів!
+                    .button_container 
+                        a(href="#contacts").cta.fill_cta замовити послугу
+            section.information_mebli.wrapper.pb_80
+                h2.tac Інформація про миття вікон
+                .info_mebli.info_window.gap_20 
+                    .head_inform.tac.border_bg.flex.flex-center.items-center  
+                        p Миття вікон
+                    .description_inform.tac.border_bg.flex.items-center.flex.flex-center.items-center 
+                        p 70 грн/одна сторона (включно з миттям рам)
+                    .head_inform.tac.border_bg.flex.flex-center.items-center  
+                        p Виїзд у межах міста
+                    .description_inform.tac.border_bg.flex.items-center.flex.flex-center.items-center 
+                        p Безкоштовно
+                    .head_inform.tac.border_bg.flex.flex-center.items-center  
+                        p Виїзд за межі міста
+                    .description_inform.tac.border_bg.flex.items-center.flex.flex-center.items-center 
+                        p 150 грн
+                    
+            section.wrapper.pb_80.about_mebli
+                h2.tac Навіщо потрібне якісне миття вікон в будинку?
+                p.tac Вікна — це перше, що впадає у вічі в будь-якому приміщенні. Саме вони створюють відчуття простору та дарують світло. Але щоденні фактори: пил, дощ, вітер поступово залишають сліди на склі. У результаті: кімната виглядає похмурішою та менш затишною, краєвид за вікном стає затьмареним, а накопичений бруд і наліт навіть скорочують термін служби віконних рам і скла.
+                .grid.col_2.gap_50
+                    .img_adv
+                        picture 
+                            img(src="img/services_1.jpg", alt="")
+                    .adv_kylymy
+                        h3 Чому варто обрати нас:
+                        .adv_item.grid.gap_20.items-center 
+                            .icon_adv 
+                                span.pos_center 1
+                            .adv_text
+                                p 
+                                    b Надійність та безпека. 
+                                    | Ви можете бути впевнені, що робота виконується професіоналами з дотриманням усіх норм безпеки.
+
+                        .adv_item.grid.gap_20.items-center 
+                            .icon_adv 
+                                span.pos_center 2
+                            .adv_text
+                                p 
+                                    b Бездоганна чистота без розводів. 
+                                    | Ми працюємо тільки з професійними мийними засобами та інструментами. Завдяки цьому скло залишається кришталево чистим, без плям, подряпин чи розводів.
+
+                        .adv_item.grid.gap_20.items-center 
+                            .icon_adv 
+                                span.pos_center 3
+                            .adv_text
+                                p 
+                                    b Швидкість та зручність. 
+                                    | Ми підлаштовуємося під ваш графік і приїжджаємо у зручний для вас день та час — навіть у вихідні. Робимо все оперативно, щоб ви могли насолоджуватися чистими вікнами вже сьогодні.
+                        p.cta_left 
+                            a(href="#contacts").cta.fill_cta замовити послугу 
+                
+            include components/contacts
+        include components/footer 
+        script(src="js/scripts.js") 
