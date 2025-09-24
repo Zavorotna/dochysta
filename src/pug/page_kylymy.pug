@@ -1,0 +1,98 @@
+doctype html
+html(lang="uk")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=2.0, initial-scale=1.0")
+        title Професійна виїзна хімчистка меблів. Пральня килимів у Луцьку та передмісті
+        link(rel="stylesheet", href="css/styles.css")
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    body 
+        .dark
+        include components/header
+        main 
+            section.main_second_page.flex.column.flex-center.items-center.section_kylymy.tac
+                .main_mask
+                .wrapper.main_text_page
+                    h1 Поверніть килимам сяючу чистоту!
+                    p Ми застосовуємо ефективні та безпечні методи чищення килимів. Екологічні засоби та професійне обладнання. Ретельно почистимо, виведемо усі плями і неприємні запахи. Добре висушимо. Дбайливо запакуємо.
+                    .button_container 
+                        a(href="#contacts").cta.fill_cta замовити послугу
+            include components/info_container
+            section.wrapper.etaps_container.pb_80
+                h2.tac Етапи прання килимів
+                .grid.gap_20.col_3 
+                    figure.etap_card
+                        figcaption 
+                            picture 
+                                img(src="img/etap_1.jpg", alt="")
+                            h3 1.Обезпилення
+                            p Дозволяє позбутися пилу та сміття, видаляючи навіть застарілі забруднення, які неможливо прибрати вдома.
+                    figure.etap_card
+                        figcaption 
+                            picture 
+                                img(src="img/etap_2.jpg", alt="")
+                            h3 2.Виведення плям
+                            p Позбавляємо килим від стійких плям, що залишалися на ньому роками. Застосовуємо професійні засоби.
+                    figure.etap_card
+                        figcaption 
+                            picture 
+                                img(src="img/etap_3.jpg", alt="")
+                            h3 3.Прання
+                            p Здійснюється за допомогою роторної машини зі щіткою, що підходить саме для такого покриття.
+                    figure.etap_card
+                        figcaption 
+                            picture 
+                                img(src="img/etap_4.jpg", alt="")
+                            h3 4.Віджимання у центрифузі
+                            p Дозволяє максимально швидко видалити вологу після прання. Килим висихає значно швидше, зберігаючи свою форму.
+                    figure.etap_card
+                        figcaption 
+                            picture 
+                                img(src="img/etap_5.jpg", alt="")
+                            h3 5.Сушка
+                            p Здійснюється у спеціально обладнаному приміщенні з контрольованими умовами. Це забезпечує рівномірне висихання.
+                    figure.etap_card
+                        figcaption 
+                            picture 
+                                img(src="img/etap_6.jpg", alt="")
+                            h3 6.Пакування
+                            p Після повного висихання килим акуратно пакується у захисну плівку. Це гарантує чистоту виробу під час транспортування.
+            section.adv_kylymy.wrapper.pb_80    
+                h2.tac Наші переваги
+                .grid.col_2.gap_50.items-center
+                    .img_adv
+                        picture 
+                            img(src="img/adv_kylymy.jpg", alt="")
+                    .adv_kylymy
+                        h3 Якість, яку видно одразу
+                        .adv_item.grid.gap_20.items-center 
+                            .icon_adv 
+                                span.pos_center 1
+                            .adv_text
+                                p 
+                                    b Видалення плям.
+                                    | Ефективно прибираємо навіть стійкі забруднення — каву, вино, чорнило чи сліди від тварин, зберігаючи структуру килима.
+
+                        .adv_item.grid.gap_20.items-center 
+                            .icon_adv 
+                                span.pos_center 2
+                            .adv_text
+                                p 
+                                    b Відновлення кольору. 
+                                    | Повертаємо яскравість і насиченість кольорів, дбайливо очищаючи ворс від пилу та бруду.
+
+                        .adv_item.grid.gap_20.items-center 
+                            .icon_adv 
+                                span.pos_center 3
+                            .adv_text
+                                p 
+                                    b Усунення запахів. 
+                                    | Нейтралізуємо неприємні запахи їжі, тютюну чи тварин, даруючи килиму та дому свіжість.
+                        p.cta_left 
+                            a(href="#contacts").cta.fill_cta замовити послугу 
+            include components/contacts
+        include components/footer 
+        script(src="js/scripts.js") 
