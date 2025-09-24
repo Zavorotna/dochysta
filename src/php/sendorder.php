@@ -5,12 +5,14 @@
         $userSurName = $_POST["userSurName"];
         $email = $_POST["email"];
         $comment = $_POST["comment"];
+        $sourcePage = $_POST["sourcePage"];
     } catch (\Throwable $th) {
         $userPhone = "ERROR IN MESSAGE";
         $userName = "ERROR IN MESSAGE";
         $userSurName = "ERROR IN MESSAGE";
         $email = "ERROR IN MESSAGE";
         $comment = "ERROR IN MESSAGE";
+        $sourcePage = "ERROR IN MESSAGE";
     }
     $token = "7552130536:AAFzqqczWXgbM_XwD45tgnBNhMSYfdM2kOQ"; // api телеграм бота
     $chat_id = "-1002563931620";
@@ -22,10 +24,11 @@
     $userSurName = urlencode("$userSurName");
     $email = urlencode("$email");
     $comment = urlencode("$comment");
+    $sourcePage = urlencode("$sourcePage");
     
 
     $urlQuery = "https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=" .
-        "***<b>Заявка</b>***%0A" . "%0A" .
+        "***<b>Заявка із сторінки" . " " . $sourcePage . "</b>***%0A" . "%0A" .
         "Ім'я: <b>$userName</b>%0A" .
         "Прізвище: <b>$userSurName</b>%0A" .
         "Телефон: <b>$userPhone</b>%0A" .

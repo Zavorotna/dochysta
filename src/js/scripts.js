@@ -61,4 +61,11 @@ document.addEventListener("DOMContentLoaded", function () {
             submenu.classList.toggle("d-block")
         })
     }
+
+    const form = document.querySelector("form[action='sendorder.php']"),
+        hiddenInput = form.querySelector("#sourcePage")
+
+    if (form && hiddenInput) {
+        hiddenInput.value = document.body.dataset.page || "Невідома сторінка";
+    }
 })

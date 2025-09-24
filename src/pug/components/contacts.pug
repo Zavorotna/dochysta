@@ -71,6 +71,7 @@ section.contacts.pb_80#contacts
         .form_container 
             h3.tac Форма зворотнього звʼязку
             form(action="sendorder.php" method="post") 
+                input(type="hidden" name="sourcePage" id="sourcePage")
                 .grid.col_2.gap_20
                     .name
                         label(for='name') *Імʼя
